@@ -6,8 +6,11 @@
     "mixins": [
     ],
     "client": [
+      "GetSkinUrlThreadMixin",
+      "ItemRendererMixin",
       "PlayerSkinParserMixin",
       "RenderLivingMixin",
+      "RenderPlayerAccessor",
       "RenderPlayerMixin"
     ],
     "injectors": {
