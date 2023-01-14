@@ -5,8 +5,8 @@ import net.minecraft.src.RenderPlayer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(RenderPlayer.class)
+@Mixin(value = RenderPlayer.class, remap = false)
 public interface RenderPlayerAccessor {
-    @Accessor("modelBipedMain")
+    @Accessor(value = "modelBipedMain", remap = false)
     ModelBiped getModelBipedMain();
 }
