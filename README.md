@@ -20,14 +20,6 @@
 1. Download or clone this repository
 2. Follow the instructions for the [BTA Babric Minimal Mod](https://github.com/Turnip-Labs/bta-minimal-mod)
 
-Important: if you want to use the `Minecraft Client` run configuration in your IDE, you need to import a JAR file.
-
-1. Import the BTA! Babric instance into your launcher
-2. Start the game (don't close it)
-3. Go to Minecraft instance directory
-4. Copy the JAR inside the `bin` directory to `libs`
-5. Rename it to `minecraft-client-base.jar`
-
 ### Documentation
 
 * [Fabric Wiki](https://fabricmc.net/wiki/doku.php)
