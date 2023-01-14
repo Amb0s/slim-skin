@@ -7,7 +7,7 @@
 
 ## Installation
 
-1. Install [MultiMC](https://multimc.org/) or [Prism Launcher](https://prismlauncher.org/)
+1. Install [MultiMC](https://multimc.org/) or [PolyMC](https://polymc.org/)
 2. Download the BTA! Babric [instance](https://drive.google.com/file/d/1V6nHw_uErtckjTWjfbmX2_qebeTXLbQV/view)
 3. Import the instance into your launcher
 4. Download the "Slim Skin" jar file
