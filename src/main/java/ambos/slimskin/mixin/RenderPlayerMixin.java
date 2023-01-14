@@ -1,7 +1,7 @@
 package ambos.slimskin.mixin;
 
 import ambos.slimskin.CustomModelBiped;
-import ambos.slimskin.SkinUtil;
+import ambos.slimskin.SlimSkin;
 import net.minecraft.src.*;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -28,7 +28,7 @@ public class RenderPlayerMixin extends RenderLiving {
 
     @Inject(method = "renderPlayer", at = @At("HEAD"))
     private void injectModel(EntityPlayer entityplayer, double d, double d1, double d2, float f, float f1, CallbackInfo ci) {
-        newModel.setSlim(SkinUtil.isSlim(entityplayer.username));
+        newModel.setSlim(SlimSkin.areSlim.containsKey(entityplayer.username));
 
         newModel.field_1278_i = entityplayer.inventory.getCurrentItem() != null;
         newModel.isSneak = entityplayer.isSneaking();
@@ -44,16 +44,12 @@ public class RenderPlayerMixin extends RenderLiving {
     private void onSetRotationAngles(ModelBiped m, float f1, float f2, float f3, float f4, float f5, float f6) {
 
     }
+    */
 
-    @Inject(method = "drawFirstPersonHand", at = @At("RETURN"))
-    private void injectModel3(CallbackInfo ci) {
-        newModel.onGround = 0.0F;
-
-        this.modelBipedMain.setRotationAngles(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
-
-        newModel.bipedRightArm.render(0.0625F);
-        newModel.bipedRightArmwear.render(0.0625F);
-    }*/
+//    @Inject(method = "drawFirstPersonHand", at = @At("RETURN"))
+//    private void injectModel3(CallbackInfo ci) {
+//        newModel.setSlim(SlimSkin.areSlim.containsKey(entityplayer.username));
+//    }
 
     /**
      * @author Ambos
