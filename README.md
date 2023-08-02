@@ -1,6 +1,6 @@
 # Slim Skin
 
-Important: 1.8 skin support has been added to BTA! 1.7.7.0
+Note: 1.8 skin support has been added to BTA! 1.7.7.0
 
 ## Added
 
